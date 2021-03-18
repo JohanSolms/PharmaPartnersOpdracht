@@ -1,0 +1,879 @@
+2021-03-18 08:33:22.507  INFO 17344 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Starting MockTesting using Java 1.8.0_192 on ANPJNB-Johans with PID 17344 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 08:33:22.522  INFO 17344 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : No active profile set, falling back to default profiles: default
+2021-03-18 08:33:23.325  INFO 17344 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 08:33:23.425  INFO 17344 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interfaces.
+2021-03-18 08:33:24.114  INFO 17344 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 08:33:24.377  INFO 17344 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 08:33:24.478  INFO 17344 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 08:33:24.578  INFO 17344 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 08:33:24.845  INFO 17344 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 08:33:25.061  INFO 17344 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 08:33:25.879  INFO 17344 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 08:33:25.895  INFO 17344 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 08:33:26.595  WARN 17344 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 08:33:26.919  INFO 17344 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 08:33:27.435  INFO 17344 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-03-18 08:33:27.435  INFO 17344 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-03-18 08:33:27.435  INFO 17344 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2021-03-18 08:33:27.455  INFO 17344 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Started MockTesting in 5.329 seconds (JVM running for 7.207)
+2021-03-18 08:33:27.546  INFO 17344 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 08:33:27.850  INFO 17344 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrency 10
+2021-03-18 08:33:28.022  INFO 17344 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : addCurrency X45
+2021-03-18 08:33:28.072  INFO 17344 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 3
+2021-03-18 08:33:28.103  INFO 17344 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 08:33:28.315  INFO 17344 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 10
+2021-03-18 08:33:28.325  INFO 17344 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests], using SpringBootContextLoader
+2021-03-18 08:33:28.333  INFO 17344 --- [Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-18 08:33:28.333  INFO 17344 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: PharmaPartnersOpdrachtApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-18 08:33:28.335  INFO 17344 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplication for test class com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests
+2021-03-18 08:33:28.335  INFO 17344 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-18 08:33:28.335  INFO 17344 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@ec91cdd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7932aa47, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4e2ecc34, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5a636dd9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1c8aadbc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@70065cf8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@48f161a0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@93dc0c2, org.springframework.test.context.event.EventPublishingTestExecutionListener@40937b14, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2b01e62, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@418f83f5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@26d370d6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7dc3f4c3, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7f02a617, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@422f1229]
+2021-03-18 08:33:28.364  INFO 17344 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 08:33:28.364  INFO 17344 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 08:33:28.366  INFO 17344 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 08:33:28.374  INFO 17344 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-18 08:33:28.376  INFO 17344 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-18 08:34:21.549  INFO 15536 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Starting PharmaPartnersOpdrachtApplicationTests using Java 1.8.0_192 on ANPJNB-Johans with PID 15536 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 08:34:21.549  INFO 15536 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-18 08:34:22.289  INFO 15536 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 08:34:22.358  INFO 15536 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interfaces.
+2021-03-18 08:34:23.094  INFO 15536 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 08:34:23.355  INFO 15536 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 08:34:23.424  INFO 15536 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 08:34:23.477  INFO 15536 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 08:34:23.656  INFO 15536 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 08:34:23.825  INFO 15536 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 08:34:24.496  INFO 15536 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 08:34:24.496  INFO 15536 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 08:34:25.199  WARN 15536 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 08:34:25.511  INFO 15536 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 08:34:25.997  INFO 15536 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Started PharmaPartnersOpdrachtApplicationTests in 4.786 seconds (JVM running for 6.634)
+2021-03-18 08:34:26.120  INFO 15536 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 08:34:26.262  INFO 15536 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 08:34:26.262  INFO 15536 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 08:34:26.262  INFO 15536 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 08:34:26.372  INFO 15536 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-18 08:34:26.372  INFO 15536 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-18 08:34:36.273  INFO 12612 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Starting MockTesting using Java 1.8.0_192 on ANPJNB-Johans with PID 12612 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 08:34:36.273  INFO 12612 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : No active profile set, falling back to default profiles: default
+2021-03-18 08:34:36.986  INFO 12612 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 08:34:37.067  INFO 12612 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interfaces.
+2021-03-18 08:34:37.824  INFO 12612 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 08:34:38.082  INFO 12612 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 08:34:38.166  INFO 12612 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 08:34:38.251  INFO 12612 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 08:34:38.498  INFO 12612 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 08:34:38.705  INFO 12612 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 08:34:39.496  INFO 12612 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 08:34:39.506  INFO 12612 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 08:34:40.234  WARN 12612 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 08:34:40.548  INFO 12612 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 08:34:41.085  INFO 12612 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-03-18 08:34:41.085  INFO 12612 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-03-18 08:34:41.085  INFO 12612 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2021-03-18 08:34:41.106  INFO 12612 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Started MockTesting in 5.231 seconds (JVM running for 7.392)
+2021-03-18 08:34:41.195  INFO 12612 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 08:34:41.491  INFO 12612 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrency 10
+2021-03-18 08:34:41.625  INFO 12612 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : addCurrency X45
+2021-03-18 08:34:41.665  INFO 12612 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 3
+2021-03-18 08:34:41.696  INFO 12612 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 08:34:41.897  INFO 12612 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 10
+2021-03-18 08:34:41.919  INFO 12612 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 08:34:41.919  INFO 12612 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 08:34:41.919  INFO 12612 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 08:34:41.929  INFO 12612 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-18 08:34:41.929  INFO 12612 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-18 08:49:01.216  INFO 6752 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Starting MockTesting using Java 1.8.0_192 on ANPJNB-Johans with PID 6752 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 08:49:01.216  INFO 6752 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : No active profile set, falling back to default profiles: default
+2021-03-18 08:49:02.012  INFO 6752 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 08:49:02.112  INFO 6752 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interfaces.
+2021-03-18 08:49:02.858  INFO 6752 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 08:49:03.114  INFO 6752 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 08:49:03.231  INFO 6752 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 08:49:03.325  INFO 6752 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 08:49:03.610  INFO 6752 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 08:49:03.853  INFO 6752 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 08:49:04.598  INFO 6752 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 08:49:04.610  INFO 6752 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 08:49:05.294  WARN 6752 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 08:49:05.666  INFO 6752 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 08:49:06.204  INFO 6752 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-03-18 08:49:06.204  INFO 6752 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-03-18 08:49:06.204  INFO 6752 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2021-03-18 08:49:06.228  INFO 6752 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Started MockTesting in 5.407 seconds (JVM running for 7.459)
+2021-03-18 08:49:06.299  INFO 6752 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 08:49:06.612  INFO 6752 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrency 10
+2021-03-18 08:49:06.795  INFO 6752 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : addCurrency X45
+2021-03-18 08:49:06.835  INFO 6752 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 3
+2021-03-18 08:49:06.866  INFO 6752 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 08:49:07.069  INFO 6752 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 10
+2021-03-18 08:49:07.079  INFO 6752 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests], using SpringBootContextLoader
+2021-03-18 08:49:07.079  INFO 6752 --- [Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-18 08:49:07.079  INFO 6752 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: PharmaPartnersOpdrachtApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-18 08:49:07.079  INFO 6752 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplication for test class com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests
+2021-03-18 08:49:07.079  INFO 6752 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-18 08:49:07.087  INFO 6752 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3a6bf485, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6eda26a8, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7e4404f4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2e8fef2a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4b25f9a2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@74757908, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2ac8a0d6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7b6fec1a, org.springframework.test.context.event.EventPublishingTestExecutionListener@1fe3e23c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@400165f1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2fa0b337, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2bab85e5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2b5970ae, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@603cb6d9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4a2f88e2]
+2021-03-18 08:49:07.119  INFO 6752 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Starting PharmaPartnersOpdrachtApplicationTests using Java 1.8.0_192 on ANPJNB-Johans with PID 6752 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 08:49:07.119  INFO 6752 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-18 08:49:07.353  INFO 6752 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 08:49:07.371  INFO 6752 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2021-03-18 08:49:07.563  INFO 6752 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-03-18 08:49:07.565  INFO 6752 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-03-18 08:49:07.575  INFO 6752 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 08:49:07.585  INFO 6752 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 08:49:07.624  INFO 6752 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 08:49:07.624  INFO 6752 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 08:49:07.887  WARN 6752 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 08:49:08.021  INFO 6752 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 08:49:08.345  INFO 6752 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Started PharmaPartnersOpdrachtApplicationTests in 1.254 seconds (JVM running for 9.576)
+2021-03-18 08:49:08.355  INFO 6752 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 08:49:08.385  INFO 6752 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 08:49:08.385  INFO 6752 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 08:49:08.385  INFO 6752 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 08:49:08.385  INFO 6752 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 08:49:08.385  INFO 6752 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 08:49:08.385  INFO 6752 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 08:49:08.396  INFO 6752 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-18 08:49:08.396  INFO 6752 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-03-18 08:49:08.406  INFO 6752 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-03-18 08:49:08.406  INFO 6752 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-18 09:45:37.585  INFO 33576 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Starting MockTesting using Java 1.8.0_192 on ANPJNB-Johans with PID 33576 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 09:45:37.600  INFO 33576 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : No active profile set, falling back to default profiles: default
+2021-03-18 09:45:38.418  INFO 33576 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 09:45:38.503  INFO 33576 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interfaces.
+2021-03-18 09:45:39.289  INFO 33576 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 09:45:39.546  INFO 33576 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 09:45:39.673  INFO 33576 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 09:45:39.764  INFO 33576 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 09:45:39.965  INFO 33576 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 09:45:40.148  INFO 33576 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 09:45:40.851  INFO 33576 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 09:45:40.866  INFO 33576 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 09:45:41.663  WARN 33576 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 09:45:42.027  INFO 33576 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 09:45:42.582  INFO 33576 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-03-18 09:45:42.582  INFO 33576 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-03-18 09:45:42.582  INFO 33576 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2021-03-18 09:45:42.602  INFO 33576 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Started MockTesting in 5.375 seconds (JVM running for 7.315)
+2021-03-18 09:45:42.703  INFO 33576 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 09:45:43.027  INFO 33576 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrency 10
+2021-03-18 09:45:43.217  INFO 33576 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : addCurrency X45
+2021-03-18 09:45:43.258  INFO 33576 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 3
+2021-03-18 09:45:43.290  INFO 33576 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 09:45:43.473  INFO 33576 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 10
+2021-03-18 09:45:43.483  INFO 33576 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests], using SpringBootContextLoader
+2021-03-18 09:45:43.483  INFO 33576 --- [Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-18 09:45:43.483  INFO 33576 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: PharmaPartnersOpdrachtApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-18 09:45:43.483  INFO 33576 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplication for test class com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests
+2021-03-18 09:45:43.483  INFO 33576 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-18 09:45:43.483  INFO 33576 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5a636dd9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1c8aadbc, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@70065cf8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@48f161a0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@93dc0c2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@40937b14, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2b01e62, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@418f83f5, org.springframework.test.context.event.EventPublishingTestExecutionListener@26d370d6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7dc3f4c3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7f02a617, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@422f1229, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7f479f7a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1dc009bd, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7798260c]
+2021-03-18 09:45:43.524  INFO 33576 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Starting PharmaPartnersOpdrachtApplicationTests using Java 1.8.0_192 on ANPJNB-Johans with PID 33576 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 09:45:43.524  INFO 33576 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-18 09:45:43.807  INFO 33576 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 09:45:43.823  INFO 33576 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interfaces.
+2021-03-18 09:45:44.018  INFO 33576 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-03-18 09:45:44.020  INFO 33576 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-03-18 09:45:44.038  INFO 33576 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 09:45:44.040  INFO 33576 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 09:45:44.084  INFO 33576 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 09:45:44.085  INFO 33576 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 09:45:44.313  WARN 33576 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 09:45:44.453  INFO 33576 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 09:45:44.782  INFO 33576 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Started PharmaPartnersOpdrachtApplicationTests in 1.288 seconds (JVM running for 9.491)
+2021-03-18 09:45:44.794  INFO 33576 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 09:45:44.815  INFO 33576 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 09:45:44.815  INFO 33576 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 09:45:44.816  INFO 33576 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 09:45:44.816  INFO 33576 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 09:45:44.817  INFO 33576 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 09:45:44.817  INFO 33576 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 09:45:44.828  INFO 33576 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-18 09:45:44.829  INFO 33576 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-03-18 09:45:44.834  INFO 33576 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-18 09:45:44.835  INFO 33576 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-03-18 09:45:51.292  INFO 42848 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Starting PharmaPartnersOpdrachtApplication using Java 1.8.0_192 on ANPJNB-Johans with PID 42848 (C:\Users\johans\Downloads\PharmaPartnersOpdracht\build\classes\java\main started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 09:45:51.292  INFO 42848 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : No active profile set, falling back to default profiles: default
+2021-03-18 09:45:52.108  INFO 42848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 09:45:52.308  INFO 42848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 175 ms. Found 1 JPA repository interfaces.
+2021-03-18 09:45:53.646  INFO 42848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-18 09:45:53.661  INFO 42848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-18 09:45:53.661  INFO 42848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-18 09:45:53.784  INFO 42848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-03-18 09:45:53.784  INFO 42848 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2454 ms
+2021-03-18 09:45:53.984  INFO 42848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 09:45:54.132  INFO 42848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 09:45:54.185  INFO 42848 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 09:45:54.232  INFO 42848 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 09:45:54.417  INFO 42848 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 09:45:54.570  INFO 42848 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 09:45:55.590  INFO 42848 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 09:45:55.606  INFO 42848 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 09:45:56.035  WARN 42848 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 09:45:56.160  INFO 42848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 09:45:56.357  INFO 42848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2021-03-18 09:45:56.365  INFO 42848 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Started PharmaPartnersOpdrachtApplication in 5.581 seconds (JVM running for 6.014)
+2021-03-18 09:45:56.433  INFO 42848 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 09:46:16.066  INFO 42848 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-18 09:46:16.067  INFO 42848 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-18 09:46:16.068  INFO 42848 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-03-18 09:46:16.101  INFO 42848 --- [http-nio-8080-exec-1] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrency 2
+2021-03-18 09:46:27.301  INFO 42848 --- [http-nio-8080-exec-3] c.s.P.PharmaPartnersOpdrachtApplication  : putCurrency id 2 X45
+2021-03-18 09:46:34.896  INFO 42848 --- [http-nio-8080-exec-4] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 09:46:56.175  INFO 42848 --- [http-nio-8080-exec-5] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 2
+2021-03-18 09:47:01.336  INFO 42848 --- [http-nio-8080-exec-6] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 7
+2021-03-18 11:11:29.669  INFO 30904 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Starting MockTesting using Java 1.8.0_192 on ANPJNB-Johans with PID 30904 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:11:29.669  INFO 30904 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : No active profile set, falling back to default profiles: default
+2021-03-18 11:11:30.382  INFO 30904 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:11:30.476  INFO 30904 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:11:31.162  INFO 30904 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 11:11:31.432  INFO 30904 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 11:11:31.532  INFO 30904 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:11:31.601  INFO 30904 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 11:11:31.810  INFO 30904 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 11:11:31.994  INFO 30904 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:11:32.790  INFO 30904 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:11:32.806  INFO 30904 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:11:33.880  WARN 30904 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:11:34.296  INFO 30904 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:11:34.852  INFO 30904 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-03-18 11:11:34.852  INFO 30904 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-03-18 11:11:34.852  INFO 30904 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2021-03-18 11:11:34.880  INFO 30904 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Started MockTesting in 5.564 seconds (JVM running for 7.462)
+2021-03-18 11:11:34.973  INFO 30904 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:11:35.296  INFO 30904 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrency 10
+2021-03-18 11:11:35.478  INFO 30904 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : addCurrency X45
+2021-03-18 11:11:35.539  INFO 30904 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 3
+2021-03-18 11:11:35.580  INFO 30904 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 11:11:35.811  INFO 30904 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 10
+2021-03-18 11:11:35.821  INFO 30904 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests], using SpringBootContextLoader
+2021-03-18 11:11:35.821  INFO 30904 --- [Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-18 11:11:35.821  INFO 30904 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: PharmaPartnersOpdrachtApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-18 11:11:35.821  INFO 30904 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplication for test class com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests
+2021-03-18 11:11:35.821  INFO 30904 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-18 11:11:35.821  INFO 30904 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@68ceb932, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2138ccbf, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@257bd666, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@49588ba7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5442ac97, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3378cf94, org.springframework.test.context.transaction.TransactionalTestExecutionListener@484be77b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@45c34866, org.springframework.test.context.event.EventPublishingTestExecutionListener@4a4725d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@71551932, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@66b2485c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@396dbc94, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1e7c177e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@47b9010a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@33bd5109]
+2021-03-18 11:11:35.868  INFO 30904 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Starting PharmaPartnersOpdrachtApplicationTests using Java 1.8.0_192 on ANPJNB-Johans with PID 30904 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:11:35.868  INFO 30904 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-18 11:11:36.116  INFO 30904 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:11:36.122  INFO 30904 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:11:36.338  INFO 30904 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-03-18 11:11:36.338  INFO 30904 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-03-18 11:11:36.370  INFO 30904 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:11:36.370  INFO 30904 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:11:36.401  INFO 30904 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:11:36.401  INFO 30904 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:11:36.664  WARN 30904 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:11:36.788  INFO 30904 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:11:37.122  INFO 30904 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Started PharmaPartnersOpdrachtApplicationTests in 1.292 seconds (JVM running for 9.707)
+2021-03-18 11:11:37.132  INFO 30904 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:11:37.153  INFO 30904 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:11:37.153  INFO 30904 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:11:37.153  INFO 30904 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:11:37.153  INFO 30904 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 11:11:37.153  INFO 30904 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:11:37.153  INFO 30904 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 11:11:37.163  INFO 30904 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-03-18 11:11:37.163  INFO 30904 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-18 11:11:37.163  INFO 30904 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-18 11:11:37.171  INFO 30904 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-03-18 11:12:43.746  INFO 45792 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Starting PharmaPartnersOpdrachtApplication using Java 1.8.0_192 on ANPJNB-Johans with PID 45792 (C:\Users\johans\Downloads\PharmaPartnersOpdracht\build\classes\java\main started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:12:43.751  INFO 45792 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : No active profile set, falling back to default profiles: default
+2021-03-18 11:12:44.314  INFO 45792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:12:44.374  INFO 45792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:12:45.356  INFO 45792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-18 11:12:45.356  INFO 45792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-18 11:12:45.356  INFO 45792 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-18 11:12:45.457  INFO 45792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-03-18 11:12:45.457  INFO 45792 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1675 ms
+2021-03-18 11:12:45.573  INFO 45792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 11:12:45.657  INFO 45792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 11:12:45.704  INFO 45792 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:12:45.758  INFO 45792 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 11:12:45.874  INFO 45792 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 11:12:45.958  INFO 45792 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:12:46.476  INFO 45792 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:12:46.476  INFO 45792 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:12:46.723  WARN 45792 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:12:46.825  INFO 45792 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:12:47.009  INFO 45792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2021-03-18 11:12:47.009  INFO 45792 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Started PharmaPartnersOpdrachtApplication in 3.685 seconds (JVM running for 4.174)
+2021-03-18 11:12:47.078  INFO 45792 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:13:50.115  INFO 45792 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-18 11:13:50.115  INFO 45792 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-18 11:13:50.117  INFO 45792 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-03-18 11:13:50.151  INFO 45792 --- [http-nio-8080-exec-2] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 11:14:18.859  INFO 45792 --- [http-nio-8080-exec-3] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 11:15:42.214  INFO 42176 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Starting PharmaPartnersOpdrachtApplication using Java 1.8.0_192 on ANPJNB-Johans with PID 42176 (C:\Users\johans\Downloads\PharmaPartnersOpdracht\build\classes\java\main started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:15:42.216  INFO 42176 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : No active profile set, falling back to default profiles: default
+2021-03-18 11:15:42.952  INFO 42176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:15:43.014  INFO 42176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:15:44.092  INFO 42176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-18 11:15:44.106  INFO 42176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-18 11:15:44.106  INFO 42176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-18 11:15:44.202  INFO 42176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-03-18 11:15:44.202  INFO 42176 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1921 ms
+2021-03-18 11:15:44.355  INFO 42176 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 11:15:44.471  INFO 42176 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 11:15:44.518  INFO 42176 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:15:44.556  INFO 42176 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 11:15:44.734  INFO 42176 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 11:15:44.903  INFO 42176 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:15:45.582  INFO 42176 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:15:45.594  INFO 42176 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:15:45.937  WARN 42176 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:15:46.044  INFO 42176 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:15:46.260  INFO 42176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2021-03-18 11:15:46.276  INFO 42176 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Started PharmaPartnersOpdrachtApplication in 4.74 seconds (JVM running for 5.412)
+2021-03-18 11:15:46.345  INFO 42176 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:15:52.254  INFO 42176 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-18 11:15:52.255  INFO 42176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-18 11:15:52.256  INFO 42176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-03-18 11:15:52.301  INFO 42176 --- [http-nio-8080-exec-1] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 11:16:30.618  WARN 42176 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s42ms65µs299ns).
+2021-03-18 11:18:48.005  WARN 42176 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m17s386ms659µs501ns).
+2021-03-18 11:18:57.820  INFO 42176 --- [http-nio-8080-exec-3] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 11:19:19.445  INFO 42176 --- [http-nio-8080-exec-4] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 11:19:24.666  INFO 42176 --- [http-nio-8080-exec-5] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 11:19:30.381  INFO 42176 --- [http-nio-8080-exec-6] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 11:19:38.324  INFO 42176 --- [http-nio-8080-exec-7] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 11:19:50.013  INFO 42176 --- [http-nio-8080-exec-8] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 11:29:59.485  INFO 48460 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Starting MockTesting using Java 1.8.0_192 on ANPJNB-Johans with PID 48460 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:29:59.488  INFO 48460 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : No active profile set, falling back to default profiles: default
+2021-03-18 11:30:00.306  INFO 48460 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:30:00.393  INFO 48460 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:30:01.156  INFO 48460 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 11:30:01.432  INFO 48460 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 11:30:01.526  INFO 48460 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:30:01.613  INFO 48460 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 11:30:01.828  INFO 48460 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 11:30:02.041  INFO 48460 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:30:02.832  INFO 48460 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:30:02.845  INFO 48460 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:30:03.718  WARN 48460 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:30:04.139  INFO 48460 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:30:04.701  INFO 48460 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-03-18 11:30:04.701  INFO 48460 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-03-18 11:30:04.709  INFO 48460 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2021-03-18 11:30:04.731  INFO 48460 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Started MockTesting in 5.625 seconds (JVM running for 7.553)
+2021-03-18 11:30:04.817  INFO 48460 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:30:05.163  INFO 48460 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrency 10
+2021-03-18 11:30:05.356  INFO 48460 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : addCurrency X45
+2021-03-18 11:30:05.399  INFO 48460 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 3
+2021-03-18 11:30:05.442  INFO 48460 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 11:30:05.662  INFO 48460 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 10
+2021-03-18 11:30:05.673  INFO 48460 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests], using SpringBootContextLoader
+2021-03-18 11:30:05.674  INFO 48460 --- [Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-18 11:30:05.674  INFO 48460 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: PharmaPartnersOpdrachtApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-18 11:30:05.677  INFO 48460 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplication for test class com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests
+2021-03-18 11:30:05.679  INFO 48460 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-18 11:30:05.680  INFO 48460 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@149fc2bc, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15c26940, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@30db3301, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1c01148, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6ba0b9ee, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6dae45b3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@404303c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@54f3ba5, org.springframework.test.context.event.EventPublishingTestExecutionListener@6bce8d2b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7452de3c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5172855a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2d1c1ec2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@32a4699f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@50e5f2c9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@15f8e5da]
+2021-03-18 11:30:05.713  INFO 48460 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Starting PharmaPartnersOpdrachtApplicationTests using Java 1.8.0_192 on ANPJNB-Johans with PID 48460 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:30:05.715  INFO 48460 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-18 11:30:05.962  INFO 48460 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:30:05.975  INFO 48460 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:30:06.201  INFO 48460 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-03-18 11:30:06.205  INFO 48460 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-03-18 11:30:06.232  INFO 48460 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:30:06.239  INFO 48460 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:30:06.279  INFO 48460 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:30:06.279  INFO 48460 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:30:06.543  WARN 48460 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:30:06.693  INFO 48460 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:30:07.035  INFO 48460 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Started PharmaPartnersOpdrachtApplicationTests in 1.352 seconds (JVM running for 9.857)
+2021-03-18 11:30:07.044  INFO 48460 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:30:07.060  INFO 48460 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:30:07.060  INFO 48460 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:30:07.061  INFO 48460 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:30:07.061  INFO 48460 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:30:07.062  INFO 48460 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 11:30:07.062  INFO 48460 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 11:30:07.071  INFO 48460 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-03-18 11:30:07.071  INFO 48460 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-18 11:30:07.077  INFO 48460 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-03-18 11:30:07.078  INFO 48460 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-18 11:33:15.072  INFO 48440 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Starting MockTesting using Java 1.8.0_192 on ANPJNB-Johans with PID 48440 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:33:15.072  INFO 48440 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : No active profile set, falling back to default profiles: default
+2021-03-18 11:33:16.133  INFO 48440 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:33:16.214  INFO 48440 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:33:16.959  INFO 48440 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 11:33:17.256  INFO 48440 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 11:33:17.356  INFO 48440 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:33:17.457  INFO 48440 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 11:33:17.679  INFO 48440 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 11:33:17.981  INFO 48440 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:33:18.782  INFO 48440 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:33:18.794  INFO 48440 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:33:19.673  WARN 48440 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:33:20.258  INFO 48440 --- [Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-18 11:33:20.727  INFO 48440 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:33:21.412  INFO 48440 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-03-18 11:33:21.413  INFO 48440 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-03-18 11:33:21.415  INFO 48440 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-03-18 11:33:21.432  INFO 48440 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-18 11:33:21.482  INFO 48440 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-18 11:33:21.536  INFO 48440 --- [Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-18 11:33:21.566  INFO 48440 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Started MockTesting in 6.904 seconds (JVM running for 8.824)
+2021-03-18 11:33:21.663  INFO 48440 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:33:21.854  INFO 48440 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrency 10
+2021-03-18 11:33:22.032  INFO 48440 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : addCurrency X45
+2021-03-18 11:33:22.078  INFO 48440 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 3
+2021-03-18 11:33:22.122  INFO 48440 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 11:33:22.367  INFO 48440 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 10
+2021-03-18 11:33:22.377  INFO 48440 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests], using SpringBootContextLoader
+2021-03-18 11:33:22.378  INFO 48440 --- [Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-18 11:33:22.379  INFO 48440 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: PharmaPartnersOpdrachtApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-18 11:33:22.381  INFO 48440 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplication for test class com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests
+2021-03-18 11:33:22.385  INFO 48440 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-18 11:33:22.386  INFO 48440 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@a20fe3f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@32bc1ea4, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@41b227f1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2b586205, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2684b057, org.springframework.test.context.support.DirtiesContextTestExecutionListener@749fc31d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@24c2efd0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4c62f907, org.springframework.test.context.event.EventPublishingTestExecutionListener@4f67fed4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@456a5b0e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7665901c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2d94f516, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5d753f2e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4a50ada5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@10ef2183]
+2021-03-18 11:33:22.424  INFO 48440 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Starting PharmaPartnersOpdrachtApplicationTests using Java 1.8.0_192 on ANPJNB-Johans with PID 48440 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:33:22.425  INFO 48440 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-18 11:33:22.865  INFO 48440 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:33:22.880  INFO 48440 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:33:23.063  INFO 48440 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-03-18 11:33:23.066  INFO 48440 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-03-18 11:33:23.086  INFO 48440 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:33:23.093  INFO 48440 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:33:23.127  INFO 48440 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:33:23.127  INFO 48440 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:33:23.442  WARN 48440 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:33:23.717  INFO 48440 --- [Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-18 11:33:23.880  INFO 48440 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:33:24.169  INFO 48440 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-18 11:33:24.169  INFO 48440 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-18 11:33:24.179  INFO 48440 --- [Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-18 11:33:24.187  INFO 48440 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Started PharmaPartnersOpdrachtApplicationTests in 1.798 seconds (JVM running for 11.446)
+2021-03-18 11:33:24.189  INFO 48440 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:33:24.209  INFO 48440 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:33:24.209  INFO 48440 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:33:24.219  INFO 48440 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:33:24.219  INFO 48440 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:33:24.219  INFO 48440 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 11:33:24.219  INFO 48440 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 11:33:24.229  INFO 48440 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-18 11:33:24.229  INFO 48440 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-03-18 11:33:24.237  INFO 48440 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-18 11:33:24.237  INFO 48440 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-03-18 11:34:00.702  INFO 48412 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Starting PharmaPartnersOpdrachtApplication using Java 1.8.0_192 on ANPJNB-Johans with PID 48412 (C:\Users\johans\Downloads\PharmaPartnersOpdracht\build\classes\java\main started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:34:00.705  INFO 48412 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : No active profile set, falling back to default profiles: default
+2021-03-18 11:34:01.530  INFO 48412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:34:01.584  INFO 48412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:34:02.654  INFO 48412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-18 11:34:02.664  INFO 48412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-18 11:34:02.665  INFO 48412 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-18 11:34:02.773  INFO 48412 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-03-18 11:34:02.773  INFO 48412 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2019 ms
+2021-03-18 11:34:02.913  INFO 48412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 11:34:03.011  INFO 48412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 11:34:03.055  INFO 48412 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:34:03.099  INFO 48412 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 11:34:03.220  INFO 48412 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 11:34:03.331  INFO 48412 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:34:03.923  INFO 48412 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:34:03.932  INFO 48412 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:34:04.386  WARN 48412 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:34:04.522  INFO 48412 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-18 11:34:04.613  INFO 48412 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:34:04.778  INFO 48412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2021-03-18 11:34:04.779  INFO 48412 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-18 11:34:04.797  INFO 48412 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-18 11:34:04.842  INFO 48412 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-18 11:34:04.859  INFO 48412 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Started PharmaPartnersOpdrachtApplication in 4.534 seconds (JVM running for 4.972)
+2021-03-18 11:34:04.919  INFO 48412 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:35:00.114  INFO 48412 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-18 11:35:00.115  INFO 48412 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-18 11:35:00.117  INFO 48412 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-03-18 11:35:00.164  INFO 48412 --- [http-nio-8080-exec-2] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 11:37:42.258  INFO 36260 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Starting MockTesting using Java 1.8.0_192 on ANPJNB-Johans with PID 36260 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:37:42.262  INFO 36260 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : No active profile set, falling back to default profiles: default
+2021-03-18 11:37:43.285  INFO 36260 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:37:43.358  INFO 36260 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:37:44.053  INFO 36260 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 11:37:44.359  INFO 36260 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 11:37:44.448  INFO 36260 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:37:44.532  INFO 36260 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 11:37:44.732  INFO 36260 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 11:37:44.939  INFO 36260 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:37:45.658  INFO 36260 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:37:45.669  INFO 36260 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:37:46.518  WARN 36260 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:37:46.948  INFO 36260 --- [Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-18 11:37:47.364  INFO 36260 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:37:48.021  INFO 36260 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-03-18 11:37:48.022  INFO 36260 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-03-18 11:37:48.026  INFO 36260 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2021-03-18 11:37:48.042  INFO 36260 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-18 11:37:48.077  INFO 36260 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-18 11:37:48.135  INFO 36260 --- [Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-18 11:37:48.158  INFO 36260 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Started MockTesting in 6.259 seconds (JVM running for 8.193)
+2021-03-18 11:37:48.249  INFO 36260 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:37:48.431  INFO 36260 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrency 10
+2021-03-18 11:37:48.601  INFO 36260 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : addCurrency X45
+2021-03-18 11:37:48.640  INFO 36260 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 3
+2021-03-18 11:37:48.675  INFO 36260 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 11:37:48.864  INFO 36260 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 10
+2021-03-18 11:37:48.876  INFO 36260 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests], using SpringBootContextLoader
+2021-03-18 11:37:48.877  INFO 36260 --- [Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-18 11:37:48.878  INFO 36260 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: PharmaPartnersOpdrachtApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-18 11:37:48.880  INFO 36260 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplication for test class com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests
+2021-03-18 11:37:48.884  INFO 36260 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-18 11:37:48.885  INFO 36260 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9be9905, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@142ded4f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@43864211, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5e3b1fc5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@23b0d3b6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@588c151a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@296b52d0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2f28b50f, org.springframework.test.context.event.EventPublishingTestExecutionListener@a20fe3f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@32bc1ea4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@41b227f1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2b586205, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2684b057, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@749fc31d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@24c2efd0]
+2021-03-18 11:37:48.924  INFO 36260 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Starting PharmaPartnersOpdrachtApplicationTests using Java 1.8.0_192 on ANPJNB-Johans with PID 36260 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:37:48.925  INFO 36260 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-18 11:37:49.333  INFO 36260 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:37:49.346  INFO 36260 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:37:49.506  INFO 36260 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-03-18 11:37:49.509  INFO 36260 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-03-18 11:37:49.533  INFO 36260 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:37:49.539  INFO 36260 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:37:49.569  INFO 36260 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:37:49.570  INFO 36260 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:37:49.892  WARN 36260 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:37:50.171  INFO 36260 --- [Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-18 11:37:50.359  INFO 36260 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:37:50.672  INFO 36260 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-18 11:37:50.673  INFO 36260 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-18 11:37:50.687  INFO 36260 --- [Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-18 11:37:50.691  INFO 36260 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Started PharmaPartnersOpdrachtApplicationTests in 1.803 seconds (JVM running for 10.726)
+2021-03-18 11:37:50.699  INFO 36260 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:37:50.718  INFO 36260 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:37:50.718  INFO 36260 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:37:50.724  INFO 36260 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:37:50.725  INFO 36260 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 11:37:50.725  INFO 36260 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:37:50.725  INFO 36260 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 11:37:50.736  INFO 36260 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-03-18 11:37:50.737  INFO 36260 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-18 11:37:50.743  INFO 36260 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-18 11:37:50.743  INFO 36260 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-03-18 11:37:55.170  INFO 24556 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Starting PharmaPartnersOpdrachtApplication using Java 1.8.0_192 on ANPJNB-Johans with PID 24556 (C:\Users\johans\Downloads\PharmaPartnersOpdracht\build\classes\java\main started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:37:55.173  INFO 24556 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : No active profile set, falling back to default profiles: default
+2021-03-18 11:37:56.097  INFO 24556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:37:56.155  INFO 24556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:37:57.241  INFO 24556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-18 11:37:57.257  INFO 24556 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-18 11:37:57.257  INFO 24556 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-18 11:37:57.379  INFO 24556 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-03-18 11:37:57.379  INFO 24556 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2158 ms
+2021-03-18 11:37:57.516  INFO 24556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 11:37:57.600  INFO 24556 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 11:37:57.655  INFO 24556 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:37:57.695  INFO 24556 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 11:37:57.817  INFO 24556 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 11:37:57.913  INFO 24556 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:37:58.458  INFO 24556 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:37:58.474  INFO 24556 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:37:58.820  WARN 24556 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:37:58.941  INFO 24556 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-18 11:37:59.024  INFO 24556 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:37:59.178  INFO 24556 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2021-03-18 11:37:59.179  INFO 24556 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-18 11:37:59.195  INFO 24556 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-18 11:37:59.240  INFO 24556 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-18 11:37:59.256  INFO 24556 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Started PharmaPartnersOpdrachtApplication in 4.499 seconds (JVM running for 4.926)
+2021-03-18 11:37:59.317  INFO 24556 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:39:02.463  INFO 24556 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-18 11:39:02.463  INFO 24556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-18 11:39:02.465  INFO 24556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-03-18 11:39:17.558  INFO 11172 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Starting PharmaPartnersOpdrachtApplication using Java 1.8.0_192 on ANPJNB-Johans with PID 11172 (C:\Users\johans\Downloads\PharmaPartnersOpdracht\build\classes\java\main started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:39:17.564  INFO 11172 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : No active profile set, falling back to default profiles: default
+2021-03-18 11:39:18.627  INFO 11172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:39:18.686  INFO 11172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:39:19.785  INFO 11172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-18 11:39:19.792  INFO 11172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-18 11:39:19.792  INFO 11172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-18 11:39:19.927  INFO 11172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-03-18 11:39:19.927  INFO 11172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2298 ms
+2021-03-18 11:39:20.081  INFO 11172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 11:39:20.178  INFO 11172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 11:39:20.221  INFO 11172 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:39:20.264  INFO 11172 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 11:39:20.391  INFO 11172 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 11:39:20.499  INFO 11172 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:39:21.088  INFO 11172 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:39:21.100  INFO 11172 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:39:21.471  WARN 11172 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:39:21.602  INFO 11172 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-18 11:39:21.687  INFO 11172 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:39:21.840  INFO 11172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2021-03-18 11:39:21.840  INFO 11172 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-18 11:39:21.874  INFO 11172 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-18 11:39:21.922  INFO 11172 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-18 11:39:21.940  INFO 11172 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Started PharmaPartnersOpdrachtApplication in 4.906 seconds (JVM running for 5.449)
+2021-03-18 11:39:22.010  INFO 11172 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:40:25.750  INFO 11172 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-18 11:40:25.751  INFO 11172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-18 11:40:25.753  INFO 11172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-03-18 11:41:21.436  INFO 45708 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Starting MockTesting using Java 1.8.0_192 on ANPJNB-Johans with PID 45708 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:41:21.436  INFO 45708 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : No active profile set, falling back to default profiles: default
+2021-03-18 11:41:22.485  INFO 45708 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:41:22.558  INFO 45708 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:41:23.381  INFO 45708 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 11:41:23.724  INFO 45708 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 11:41:23.813  INFO 45708 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:41:23.888  INFO 45708 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 11:41:24.095  INFO 45708 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 11:41:24.309  INFO 45708 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:41:25.068  INFO 45708 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:41:25.081  INFO 45708 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:41:26.109  WARN 45708 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:41:26.633  INFO 45708 --- [Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-18 11:41:27.160  INFO 45708 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:41:27.657  INFO 45708 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-03-18 11:41:27.658  INFO 45708 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-03-18 11:41:27.660  INFO 45708 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-03-18 11:41:27.854  INFO 45708 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-18 11:41:27.893  INFO 45708 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-18 11:41:27.963  INFO 45708 --- [Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-18 11:41:28.195  INFO 45708 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Started MockTesting in 7.1 seconds (JVM running for 9.118)
+2021-03-18 11:41:28.296  INFO 45708 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:41:28.479  INFO 45708 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrency 10
+2021-03-18 11:41:28.739  INFO 45708 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : addCurrency X45
+2021-03-18 11:41:28.787  INFO 45708 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 3
+2021-03-18 11:41:28.828  INFO 45708 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 11:41:29.047  INFO 45708 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 10
+2021-03-18 11:41:29.056  INFO 45708 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests], using SpringBootContextLoader
+2021-03-18 11:41:29.057  INFO 45708 --- [Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-18 11:41:29.057  INFO 45708 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: PharmaPartnersOpdrachtApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-18 11:41:29.060  INFO 45708 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplication for test class com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests
+2021-03-18 11:41:29.063  INFO 45708 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-18 11:41:29.064  INFO 45708 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@ff3d3c7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@26036297, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4cf54273, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5840261b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@493cab3f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@74966f55, org.springframework.test.context.transaction.TransactionalTestExecutionListener@12964d6e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4bbfc1d9, org.springframework.test.context.event.EventPublishingTestExecutionListener@6776fec2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@20ddc9be, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@801df6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3584a536, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6554ddaa, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2b8a6887, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2be5bfad]
+2021-03-18 11:41:29.111  INFO 45708 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Starting PharmaPartnersOpdrachtApplicationTests using Java 1.8.0_192 on ANPJNB-Johans with PID 45708 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:41:29.113  INFO 45708 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-18 11:41:29.676  INFO 45708 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:41:29.692  INFO 45708 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:41:29.882  INFO 45708 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-03-18 11:41:29.885  INFO 45708 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-03-18 11:41:29.907  INFO 45708 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:41:29.916  INFO 45708 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:41:29.950  INFO 45708 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:41:29.950  INFO 45708 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:41:30.258  WARN 45708 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:41:30.485  INFO 45708 --- [Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-18 11:41:30.690  INFO 45708 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:41:30.991  INFO 45708 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-18 11:41:30.992  INFO 45708 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-18 11:41:31.005  INFO 45708 --- [Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-18 11:41:31.069  INFO 45708 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Started PharmaPartnersOpdrachtApplicationTests in 2.001 seconds (JVM running for 11.993)
+2021-03-18 11:41:31.081  INFO 45708 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:41:31.100  INFO 45708 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:41:31.100  INFO 45708 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:41:31.106  INFO 45708 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:41:31.106  INFO 45708 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:41:31.106  INFO 45708 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 11:41:31.106  INFO 45708 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 11:41:31.119  INFO 45708 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-18 11:41:31.119  INFO 45708 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-03-18 11:41:31.125  INFO 45708 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-18 11:41:31.125  INFO 45708 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-03-18 11:41:37.302  INFO 40072 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Starting PharmaPartnersOpdrachtApplication using Java 1.8.0_192 on ANPJNB-Johans with PID 40072 (C:\Users\johans\Downloads\PharmaPartnersOpdracht\build\classes\java\main started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:41:37.306  INFO 40072 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : No active profile set, falling back to default profiles: default
+2021-03-18 11:41:38.118  INFO 40072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:41:38.175  INFO 40072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:41:39.300  INFO 40072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-18 11:41:39.310  INFO 40072 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-18 11:41:39.311  INFO 40072 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-18 11:41:39.421  INFO 40072 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-03-18 11:41:39.422  INFO 40072 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2063 ms
+2021-03-18 11:41:39.557  INFO 40072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 11:41:39.647  INFO 40072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 11:41:39.687  INFO 40072 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:41:39.727  INFO 40072 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 11:41:39.841  INFO 40072 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 11:41:39.941  INFO 40072 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:41:40.483  INFO 40072 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:41:40.492  INFO 40072 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:41:40.831  WARN 40072 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:41:40.952  INFO 40072 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-18 11:41:41.037  INFO 40072 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:41:41.184  INFO 40072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2021-03-18 11:41:41.184  INFO 40072 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-18 11:41:41.200  INFO 40072 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-18 11:41:41.237  INFO 40072 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-18 11:41:41.416  INFO 40072 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Started PharmaPartnersOpdrachtApplication in 4.552 seconds (JVM running for 4.971)
+2021-03-18 11:41:41.485  INFO 40072 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:41:50.369  INFO 40072 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-18 11:41:50.370  INFO 40072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-18 11:41:50.372  INFO 40072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-03-18 11:43:23.828  INFO 28000 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Starting MockTesting using Java 1.8.0_192 on ANPJNB-Johans with PID 28000 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:43:23.831  INFO 28000 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : No active profile set, falling back to default profiles: default
+2021-03-18 11:43:25.017  INFO 28000 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:43:25.102  INFO 28000 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:43:25.908  INFO 28000 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 11:43:26.191  INFO 28000 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 11:43:26.305  INFO 28000 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:43:26.402  INFO 28000 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 11:43:26.645  INFO 28000 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 11:43:26.852  INFO 28000 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:43:27.653  INFO 28000 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:43:27.668  INFO 28000 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:43:28.650  WARN 28000 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:43:29.194  INFO 28000 --- [Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-18 11:43:29.640  INFO 28000 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:43:30.257  INFO 28000 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-03-18 11:43:30.258  INFO 28000 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-03-18 11:43:30.259  INFO 28000 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-03-18 11:43:30.277  INFO 28000 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-18 11:43:30.310  INFO 28000 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-18 11:43:30.379  INFO 28000 --- [Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-18 11:43:30.606  INFO 28000 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Started MockTesting in 7.141 seconds (JVM running for 9.275)
+2021-03-18 11:43:30.705  INFO 28000 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:43:30.921  INFO 28000 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrency 10
+2021-03-18 11:43:31.080  INFO 28000 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : addCurrency X45
+2021-03-18 11:43:31.121  INFO 28000 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 3
+2021-03-18 11:43:31.161  INFO 28000 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 11:43:31.374  INFO 28000 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 10
+2021-03-18 11:43:31.377  INFO 28000 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests], using SpringBootContextLoader
+2021-03-18 11:43:31.384  INFO 28000 --- [Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-18 11:43:31.384  INFO 28000 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: PharmaPartnersOpdrachtApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-18 11:43:31.384  INFO 28000 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplication for test class com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests
+2021-03-18 11:43:31.384  INFO 28000 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-18 11:43:31.384  INFO 28000 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4cf54273, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5840261b, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@493cab3f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@74966f55, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@12964d6e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4bbfc1d9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6776fec2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@20ddc9be, org.springframework.test.context.event.EventPublishingTestExecutionListener@801df6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3584a536, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6554ddaa, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2b8a6887, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2be5bfad, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3bd812f2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@782221ae]
+2021-03-18 11:43:31.427  INFO 28000 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Starting PharmaPartnersOpdrachtApplicationTests using Java 1.8.0_192 on ANPJNB-Johans with PID 28000 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:43:31.428  INFO 28000 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-18 11:43:31.855  INFO 28000 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:43:31.870  INFO 28000 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:43:32.061  INFO 28000 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-03-18 11:43:32.061  INFO 28000 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-03-18 11:43:32.081  INFO 28000 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:43:32.091  INFO 28000 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:43:32.122  INFO 28000 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:43:32.122  INFO 28000 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:43:32.406  WARN 28000 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:43:32.674  INFO 28000 --- [Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-18 11:43:32.871  INFO 28000 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:43:33.228  INFO 28000 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-18 11:43:33.229  INFO 28000 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-18 11:43:33.249  INFO 28000 --- [Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-18 11:43:33.314  INFO 28000 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Started PharmaPartnersOpdrachtApplicationTests in 1.922 seconds (JVM running for 11.982)
+2021-03-18 11:43:33.326  INFO 28000 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:43:33.346  INFO 28000 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:43:33.346  INFO 28000 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:43:33.351  INFO 28000 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:43:33.351  INFO 28000 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:43:33.351  INFO 28000 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 11:43:33.351  INFO 28000 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 11:43:33.362  INFO 28000 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-03-18 11:43:33.362  INFO 28000 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-18 11:43:33.369  INFO 28000 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-03-18 11:43:33.369  INFO 28000 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-18 11:44:54.162  INFO 48116 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Starting MockTesting using Java 1.8.0_192 on ANPJNB-Johans with PID 48116 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:44:54.162  INFO 48116 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : No active profile set, falling back to default profiles: default
+2021-03-18 11:44:55.287  INFO 48116 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:44:55.380  INFO 48116 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:44:56.097  INFO 48116 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 11:44:56.388  INFO 48116 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 11:44:56.471  INFO 48116 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:44:56.554  INFO 48116 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 11:44:56.806  INFO 48116 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 11:44:56.992  INFO 48116 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:44:57.761  INFO 48116 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:44:57.761  INFO 48116 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:44:58.625  WARN 48116 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:44:59.091  INFO 48116 --- [Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-18 11:44:59.516  INFO 48116 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:45:00.158  INFO 48116 --- [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-03-18 11:45:00.158  INFO 48116 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-03-18 11:45:00.166  INFO 48116 --- [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 8 ms
+2021-03-18 11:45:00.186  INFO 48116 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-18 11:45:00.219  INFO 48116 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-18 11:45:00.292  INFO 48116 --- [Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-18 11:45:00.525  INFO 48116 --- [Test worker] c.s.PharmaPartnersOpdracht.MockTesting   : Started MockTesting in 6.756 seconds (JVM running for 8.772)
+2021-03-18 11:45:00.626  INFO 48116 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:45:00.807  INFO 48116 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrency 10
+2021-03-18 11:45:00.953  INFO 48116 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : addCurrency X45
+2021-03-18 11:45:00.993  INFO 48116 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 3
+2021-03-18 11:45:01.031  INFO 48116 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
+2021-03-18 11:45:01.229  INFO 48116 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : deleteCurrency id 10
+2021-03-18 11:45:01.229  INFO 48116 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests], using SpringBootContextLoader
+2021-03-18 11:45:01.229  INFO 48116 --- [Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-03-18 11:45:01.229  INFO 48116 --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests]: PharmaPartnersOpdrachtApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-03-18 11:45:01.245  INFO 48116 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplication for test class com.solms.PharmaPartnersOpdracht.PharmaPartnersOpdrachtApplicationTests
+2021-03-18 11:45:01.245  INFO 48116 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-03-18 11:45:01.245  INFO 48116 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@421e063d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@546a6f54, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1e473932, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@33d61e76, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@14bd9df, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6dc166d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@21f5312d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2253aecb, org.springframework.test.context.event.EventPublishingTestExecutionListener@7d090e7f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1b8000cd, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@13f426c9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2c6ef78a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@19a16e8e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@23c831f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@304c2fff]
+2021-03-18 11:45:01.276  INFO 48116 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Starting PharmaPartnersOpdrachtApplicationTests using Java 1.8.0_192 on ANPJNB-Johans with PID 48116 (started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:45:01.276  INFO 48116 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : No active profile set, falling back to default profiles: default
+2021-03-18 11:45:01.628  INFO 48116 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:45:01.638  INFO 48116 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:45:01.809  INFO 48116 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-03-18 11:45:01.812  INFO 48116 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-03-18 11:45:01.837  INFO 48116 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:45:01.844  INFO 48116 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:45:01.875  INFO 48116 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:45:01.876  INFO 48116 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:45:02.188  WARN 48116 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:45:02.447  INFO 48116 --- [Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-18 11:45:02.625  INFO 48116 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:45:02.903  INFO 48116 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-18 11:45:02.903  INFO 48116 --- [Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-18 11:45:02.942  INFO 48116 --- [Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-18 11:45:02.995  INFO 48116 --- [Test worker] P.PharmaPartnersOpdrachtApplicationTests : Started PharmaPartnersOpdrachtApplicationTests in 1.743 seconds (JVM running for 11.237)
+2021-03-18 11:45:03.003  INFO 48116 --- [Test worker] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:45:03.015  INFO 48116 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:45:03.015  INFO 48116 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:45:03.023  INFO 48116 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:45:03.025  INFO 48116 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 11:45:03.025  INFO 48116 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:45:03.025  INFO 48116 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-18 11:45:03.033  INFO 48116 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-18 11:45:03.033  INFO 48116 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-03-18 11:45:03.033  INFO 48116 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-03-18 11:45:03.033  INFO 48116 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-18 11:45:43.433  INFO 48164 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Starting PharmaPartnersOpdrachtApplication using Java 1.8.0_192 on ANPJNB-Johans with PID 48164 (C:\Users\johans\Downloads\PharmaPartnersOpdracht\build\classes\java\main started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 11:45:43.449  INFO 48164 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : No active profile set, falling back to default profiles: default
+2021-03-18 11:45:44.296  INFO 48164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 11:45:44.362  INFO 48164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interfaces.
+2021-03-18 11:45:45.423  INFO 48164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-18 11:45:45.423  INFO 48164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-18 11:45:45.439  INFO 48164 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-18 11:45:45.539  INFO 48164 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-03-18 11:45:45.539  INFO 48164 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2052 ms
+2021-03-18 11:45:45.693  INFO 48164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 11:45:45.771  INFO 48164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 11:45:45.809  INFO 48164 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 11:45:45.871  INFO 48164 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 11:45:45.994  INFO 48164 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 11:45:46.109  INFO 48164 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 11:45:46.831  INFO 48164 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 11:45:46.841  INFO 48164 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 11:45:47.185  WARN 48164 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 11:45:47.298  INFO 48164 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-18 11:45:47.376  INFO 48164 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 11:45:47.530  INFO 48164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2021-03-18 11:45:47.530  INFO 48164 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-18 11:45:47.546  INFO 48164 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-18 11:45:47.599  INFO 48164 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-18 11:45:47.754  INFO 48164 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Started PharmaPartnersOpdrachtApplication in 4.699 seconds (JVM running for 5.113)
+2021-03-18 11:45:47.823  INFO 48164 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 11:46:11.114  INFO 48164 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-18 11:46:11.115  INFO 48164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-18 11:46:11.117  INFO 48164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-03-18 11:47:03.500  INFO 48164 --- [http-nio-8080-exec-3] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrency 1
+2021-03-18 14:17:44.052  INFO 47268 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Starting PharmaPartnersOpdrachtApplication using Java 1.8.0_192 on ANPJNB-Johans with PID 47268 (C:\Users\johans\Downloads\PharmaPartnersOpdracht\build\classes\java\main started by Johans in C:\Users\johans\Downloads\PharmaPartnersOpdracht)
+2021-03-18 14:17:44.055  INFO 47268 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : No active profile set, falling back to default profiles: default
+2021-03-18 14:17:44.948  INFO 47268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-18 14:17:45.003  INFO 47268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2021-03-18 14:17:46.104  INFO 47268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-18 14:17:46.115  INFO 47268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-18 14:17:46.115  INFO 47268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-18 14:17:46.246  INFO 47268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2021-03-18 14:17:46.246  INFO 47268 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2134 ms
+2021-03-18 14:17:46.405  INFO 47268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-18 14:17:46.506  INFO 47268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-18 14:17:46.548  INFO 47268 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-18 14:17:46.594  INFO 47268 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-18 14:17:46.712  INFO 47268 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-18 14:17:46.876  INFO 47268 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-18 14:17:47.598  INFO 47268 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-18 14:17:47.609  INFO 47268 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-18 14:17:48.126  WARN 47268 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-18 14:17:48.276  INFO 47268 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-18 14:17:48.376  INFO 47268 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-18 14:17:48.545  INFO 47268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2021-03-18 14:17:48.546  INFO 47268 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-18 14:17:48.565  INFO 47268 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-18 14:17:48.611  INFO 47268 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-03-18 14:17:48.789  INFO 47268 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Started PharmaPartnersOpdrachtApplication in 5.273 seconds (JVM running for 5.855)
+2021-03-18 14:17:48.861  INFO 47268 --- [main] c.s.P.PharmaPartnersOpdrachtApplication  : Currencies loaded
+2021-03-18 14:18:58.371  INFO 47268 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-18 14:18:58.371  INFO 47268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-18 14:18:58.373  INFO 47268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-03-18 14:18:58.428  INFO 47268 --- [http-nio-8080-exec-1] c.s.P.PharmaPartnersOpdrachtApplication  : getCurrencies
